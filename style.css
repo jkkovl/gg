@@ -1,0 +1,790 @@
+  /* CSS file created by Maxim Pavlov. Zakaz saita po telefonu 8-937-1600061 */
+
+@font-face {
+    font-family: 'robotoslab-regular';
+    src: url("roboto-slab-regular-webfont.eot");
+    src: url("roboto-slab-regular-webfont.eot") format('embedded-opentype'),
+         url("roboto-slab-regular-webfont.woff2") format('woff2'),
+         url("roboto-slab-regular-webfont.woff") format('woff'),
+         url("roboto-slab-regular-webfont.ttf") format('truetype'),
+         url("roboto-slab-regular-webfont.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exo_2.0regular';
+    src: url("exo2.0-regular-webfont.eot");
+    src: url("exo2.0-regular-webfont.eot") format('embedded-opentype'),
+         url("exo2.0-regular-webfont.woff2") format('woff2'),
+         url("exo2.0-regular-webfont.woff") format('woff'),
+         url("exo2.0-regular-webfont.ttf") format('truetype'),
+         url("exo2.0-regular-webfont.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+	/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;}
+
+/* Adaptive */ 
+@media (max-width: 1169px) {
+	#back-top {display: none !important;}	
+	#back-topmobilemenu {display: block !important;}
+		#back-topmobilemenu.default {display: none !important;}
+		#back-topmobilemenu.fixed {position: fixed; width: 100%; top: 0 !important; left: 0; z-index: 99999; text-align: center;}
+			#headerfixedmobile {background: #171717 url("headerpattern.png"); background-repeat: repeat; background-position: top left;
+							   padding: 7px 0px; text-align: center;}
+				#headerfixedmobile p {font-size: 17px; color: #ffffff; margin-top: 5px;}
+					#headerfixedmobile p span {display: inline-block; margin-right: 8px;}
+					#headerfixedmobile p a {color: #ffffff; text-decoration: none;}
+					#headerfixedmobile p a:hover {color: #00a0e3;}
+	#header {padding: 15px 0px !important;}
+		.headertopline {min-width: 200px !important; width: 96% !important;} 
+			.headertopline > div {width: 100% !important; display: block !important; text-align: center !important;}
+			.headertopline > div:nth-child(1) {margin-bottom: 10px !important;}
+				.headertopline > div:nth-child(1) img {max-width: 181px !important;}
+			.headertopline > div:nth-child(2) {display: none !important;}
+				 .headertopline > div:nth-child(3) p:nth-child(2) {display: none !important;}
+		.headermenu {display: none !important;}
+	#mobilemenu {display: block !important; width: 100%; background-color: #c71729; padding: 10px 0px 9px 0px;}
+		.mobilemenubody {width: 96%; margin: 0px auto; text-align: center;}
+			.mobilemenubody > div {display: inline-block; vertical-align: middle;}
+				.mobilemenubody > div a {cursor: pointer;}
+			.mobilemenubody > div:nth-child(1) {padding: 5px 5px 0px 5px; border: 1px solid #ffffff; margin-right: 10px;}
+			.mobilemenubody > div:nth-child(2) {color: #ffffff; font-size: 18px; text-transform: uppercase;
+											  padding-top: 3px;}
+				.mobilemenubody > div:nth-child(2) a {color: #ffffff;}
+	#infomenu {display: none; padding: 3px 0px 15px 0px; text-align: center;  background: #ffffff url("lightpattern.png"); 
+			  background-repeat: repeat; background-position: top center;}
+		#infomenu ul li {margin: 12px 10px 0px 10px; display: inline-block;}
+			#infomenu ul li a {display: inline-block; padding: 5px 7px; color: #ffffff; border: 1px solid #00a0e3; text-decoration: none;
+						  border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; background-color: #00a0e3;
+						  font-family: 'robotoslab-regular';}
+			#infomenu ul li a:hover {background-color: #ffffff; border: 1px solid #00a0e3; color: #00a0e3;}
+	#infomenufixed {display: none; padding: 3px 0px 15px 0px; text-align: center;  background: #ffffff url("lightpattern.png"); 
+					background-repeat: repeat; background-position: top center;}
+		#infomenufixed ul li {margin: 12px 10px 0px 10px; display: inline-block;}
+			#infomenufixed ul li a {display: inline-block; padding: 5px 7px; color: #ffffff; border: 1px solid #00a0e3; text-decoration: none;
+						  border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; background-color: #00a0e3;
+						  font-family: 'robotoslab-regular';}
+			#infomenufixed ul li a:hover {background-color: #ffffff; border: 1px solid #00a0e3; color: #00a0e3;}
+		.offerfilter {padding: 20px 0px !important;}
+			.offerbody {min-width: 200px !important; width: 96% !important;} 
+				.offerzagolovok {background: none !important; padding: 10px 0px 20px 0px !important;}
+					.offerzagolovok h1 {font-size: 30px !important; line-height: 34px !important; color: #00a0e3 !important;}
+					.offerzagolovok p {font-size: 20px !important; line-height: 24px !important;}
+				.offerbenefits {text-align: center; margin: 0px 0px 30px 0px !important;}
+					.offerbenefits > p {padding-top: 110px !important; width: 250px !important; margin: 25px 8px 0px 8px !important;}
+					.offerbenefits > p:last-child {margin-right: 0px;}
+		.specofferbodytop {display: none !important;}
+	#servs {padding: 20px 0px !important;}
+		.servsbody {min-width: 200px !important; width: 100% !important;} 
+			.allservs > div {margin: 30px 15px 0px 15px !important; width: 270px !important;}
+				.servimgs {width: 120px !important; height: 120px !important;}
+					.servimgs img {height: 120px !important;} 
+				.servzag {padding-left: 60px !important;}
+		.actionsfilter {padding: 20px 0px !important;}
+			.actionsbody {min-width: 200px !important; width: 100% !important;} 
+				.allactions > div {margin: 25px 12px 0px 12px !important;}
+				.allactions > div:nth-child(4n+4) {margin: 25px 12px 0px 12px !important;}
+	#benefits {padding-top: 25px !important;}
+		.benefitsbody {min-width: 200px !important; width: 100% !important;} 
+			.benefitsbody > div {margin: 0px 12px 25px 12px !important;}
+			.benefitsbody > div:nth-child(5n+5) {margin: 0px 12px 20px 12px !important;}
+	#gallery {padding: 20px 0px !important;}
+		.gallerybody {min-width: 200px !important; width: 100% !important;}
+	#faq {padding: 20px 0px !important;}
+		.faqbody {min-width: 200px !important; width: 96% !important;}
+			.faqbody > div {display: block !important; width: 100% !important; margin-right: 0px !important;}
+			.faqcols > div:nth-child(1) {width: 100% !important; margin-right: 0px !important;}
+			.faqcols > div:nth-child(2) {width: 100% !important; text-align: center !important;}	
+				.faqcols > div:nth-child(2) a img {width: 90% !important; max-width: 320px !important; margin-top: 25px;}
+	#fastorder {padding: 20px 0px !important;}
+		.fastorderbody {min-width: 200px !important; width: 96% !important;}
+			.specofferbody {width: 96% !important; min-width: 200px !important; text-align: center !important;}
+				.specofferbodyzag {background: none !important; line-height: 28px !important;}
+					.forminfo > div input {margin-bottom: 15px !important;}
+						.formconfedence > div:nth-child(1) {width: 20% !important; max-width: 30px !important;}
+						.formconfedence > div:nth-child(2) {width: 70% !important;}
+	#partners {width: 20px 0px !important;}	
+		.partnersbody {min-width: 200px !important; width: 96% !important;}
+			.allpartners > img {margin: 25px 20px 0px 20px !important; max-width: 250px !important;}
+	#seo {padding-top: 20px !important;}
+		.seobody {min-width: 200px !important; width: 94% !important;}
+			.seobody > div:nth-child(1) {display: none !important;}
+			.seobody > div:nth-child(2) {width: 100% !important;}
+				.seobodytext p {margin-top: 0px !important;}
+	#articles {padding: 20px 0px 15px 0px !important;}
+		.articlesbody {min-width: 200px !important; width: 96% !important;}
+			.allarticlesbody > div {width: 250px !important; margin: 25px 12px 0px 12px !important;}
+				.articleimg {width: 250px !important;}
+	#footer {padding: 20px 0px !important;}
+		.footertopline {min-width: 200px !important; width: 96% !important;}
+			.footertopline > div {display: block !important; width: 100% !important;}
+			.footertopline > div:nth-child(2) {margin: 15px 0px !important;}
+				.maker {display: none !important;}
+			.footertopline > div:nth-child(3) {text-align: center !important;} 
+	#footerext {display: block !important; background-color: #0e0e0e; padding: 7px 0px !important; text-align: center;}
+		#footerext p {color: #ffffff;}
+			#footerext p a {color: #00a0e3;}
+			#footerext p a:hover {color: #0091cd; text-decoration: none;}
+	#video {padding: 20px 2% !important; width: 96% !important}
+		.videozone > div {margin: 20px 8px 0px 8px !important;}
+			.videozone > div iframe {width: 250px !important; height: 141px !important;}
+		.squaresfilter {padding: 20px 0px !important;}
+			.squaresbody {min-width: 200px !important; width: 94% !important;}
+				.allsquares > div {margin: 35px 10px 0px 10px !important;}
+				.allsquares > div:nth-child(4n+4) {margin: 35px 10px 0px 10px !important;}
+	#textinsideprice {padding-bottom: 20px !important;}
+	#textinside {padding-top: 10px !important; padding-bottom: 30px !important;}
+		.textinsidebodyprice, .textinsidebody {min-width: 200px !important; width: 94% !important; padding-top: 20px !important;}
+		.prices > div > div {display: block !important;}
+		.prices > div > div:nth-child(1) {width: 100% !important; margin-right: 0px !important; text-align: center !important; 
+								      margin-bottom: 20px !important;}
+		.prices > div > div:nth-child(2) {width: 100% !important;}
+		.offerfilterinside {padding: 20px 0px !important;}
+			.benefitsinside {text-align: center !important; margin-right: 0px !important; margin-top: 35px !important;}
+					.benefitsinside p {font-size: 25px !important; line-height: 25px !important; margin-bottom: 20px !important;}
+					.benefitsinside p:last-child {margin-top: 0px;}
+						.benefitsinside p span {display: inline-block; margin-right: 10px; vertical-align: top;}
+		.howtoplayfilter  {padding: 20px 0px !important;}
+			.howtoplaybody {width: 85% !important; min-width: 200px !important;}
+		.statyaimg {display: block !important; text-align: center !important;}
+			.statyaimg img {width: 90% !important; max-width: 300px !important; margin-right: 0px !important;}
+}				
+
+
+	/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+	/* Osnovnye stili */
+body {outline: none !important; padding: 0px; margin: 0px; background-color: #ffffff; font-family: 'exo_2.0regular'; font-size: 16px; 
+	color: #575756; line-height: 23px; font-weight: 300;}
+a {text-decoration-skip-ink: none !important;}
+b, strong {font-weight: bold; color: #027258;}
+input, textarea, radiobutton {outline: none !important;}
+input:active, textarea:active {outline: none !important;}
+:focus {outline: none !important;}
+h1,h2,h3,h4,h5,h6 {font-family: 'robotoslab-regular'; font-size: 32px; line-height: 34px; color: #004899;}
+				
+	/* Shapka saita */	
+#header {width: 100%; background: #171717 url("headerpattern.png"); background-repeat: repeat; background-position: top left;
+		padding-top: 20px;}
+	.headertopline {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center;}	
+		.headertopline > div {display: inline-block; vertical-align: middle;}
+		.headertopline > div:nth-child(2) {margin: 0px 232px;}
+			.headertopline > div:nth-child(2) a {margin-right: 5px;}
+			.headertopline > div:nth-child(2) a:last-child {margin-right: 0px;}
+		.headertopline > div:nth-child(3) {text-align: right;}
+			.headertopline > div:nth-child(3) p:nth-child(1) {font-size: 23px; margin-bottom: 5px;}
+            .headertopline > div:nth-child(3) p:nth-child(2) {font-size: 23px;}
+				.headertopline > div:nth-child(3) p span {display: inline-block; margin-right: 8px;}
+				.headertopline > div:nth-child(3) p:nth-child(1) a {color: #ffffff; text-decoration: none;}
+				.headertopline > div:nth-child(3) p:nth-child(1) a:hover {color: #00a0e3;}
+                .headertopline > div:nth-child(3) p:nth-child(2) a {color: #ffffff; text-decoration: none;}
+				.headertopline > div:nth-child(3) p:nth-child(2) a:hover {color: #00a0e3;}
+			.headertopline > div:nth-child(3) p:nth-child(3) {font-size: 17px; color: #ffffff; margin-top: 5px;}
+				.headertopline > div:nth-child(3) p:nth-child(3) a {display: inline-block; margin-left: 12px; color: #00a0e3;}
+				.headertopline > div:nth-child(3) p:nth-child(3) a:hover {text-decoration: none;}
+	.headermenu {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center; font-family: 'robotoslab-regular'; font-size: 16px;
+				padding: 10px 0px 12px 0px;}	
+		.headermenu > ul li {display: inline-block; margin-right: 23px;}
+		.headermenu > ul li:last-child {margin-right: 0px;}
+			.headermenu > ul li img {display: inline-block; margin-right: 7px; vertical-align: middle;}
+			.headermenu > ul li a {display: inline-block; color: #ffffff; vertical-align: middle;}
+			.headermenu > ul li a:hover {color: #00a0e3; text-decoration: none;}
+			
+	/* Specpredlozhenie */
+#offer {width: 100%;}
+	.offerfilter {background: url("offerfilter.png"); background-repeat: repeat; background-position: top left; padding: 45px 0px;}
+	.offerfilterinside {background: url("offerfilter.png"); background-repeat: repeat; background-position: top left; padding: 85px 0px;}
+		.offerbody {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center;}
+			.offerzagolovok {background: url("offerzagbg.png"); background-repeat: no-repeat; background-position: top center; 
+						    text-align: center; padding: 30px 0px;}
+				.offerzagolovok h1 {font-size: 35px; color: #ffffff;}
+				.offerzagolovok p  {font-family: 'robotoslab-regular'; font-size: 35px; color: #ffffff; padding-top: 10px;}
+			.offerbenefits {text-align: center; margin: 40px 0px 75px 0px;}
+				.offerbenefits > p {display: inline-block; vertical-align: top; background: url("check.png"); padding-top: 122px;
+									background-repeat: no-repeat; background-position: top center; width: 270px; margin-right: 25px;
+									color: #ffffff; font-size: 20px; line-height: 24px;}
+				.offerbenefits > p:last-child {margin-right: 0px;}
+			.offerbenefitsinside {text-align: center; margin: 40px 0px 0px 0px;}
+				.offerbenefitsinside > div {display: inline-block; vertical-align: top; background: url("check.png"); padding-top: 122px;
+									background-repeat: no-repeat; background-position: top center; width: 270px; margin-right: 25px;
+									color: #ffffff; font-size: 20px; line-height: 24px;}
+				.offerbenefitsinside > div:last-child {margin-right: 0px;}
+			.specofferbodyzag {display: inline-block; padding: 14px 15px; font-family: 'robotoslab-regular'; color: #ffffff; font-size: 24px; 
+							  background-color: #009640;}
+			.specofferbodyform {margin-top: 30px;}
+				.forminfo > div {display: inline-block; vertical-align: top; width: 250px; margin: 0px 20px;}
+					.forminfo > div:nth-child(1) input, .forminfo > div:nth-child(2) input {padding: 10px 15px; background-color: #ffffff; border: none;
+								border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; width: 230px; font-family: 'exo_2.0regular'; 
+								font-size: 16px; color: #817f7d;}
+						.forminfo > div input::-webkit-input-placeholder {color: #817f7d;}
+						.forminfo > div input::-moz-placeholder {color: #817f7d;}
+						.forminfo > div input::-moz-placeholder {color: #817f7d;}
+				.forminfo > div:nth-child(3) {width: 173px;}
+					.forminfo > div:nth-child(3) input {background-color: #c71729; color: #ffffff; font-family: 'exo_2.0regular'; font-size: 18px;
+													padding: 9px 35px; border: none; border-radius: 2px; -moz-border-radius: 2px; width: 173px;
+													-webkit-border-radius: 2px; cursor: pointer; text-transform: uppercase; }
+					.forminfo > div:nth-child(3) input:hover, .forminfo > div:nth-child(3) input:disabled {background-color: #00a0e3;}
+				.formconfedence {text-align: center; margin-top: 30px;}
+					.formconfedence > div {display: inline-block; vertical-align: middle;}
+						.formconfedence > div:nth-child(1) input {width: 20px; padding: 0px !important; display: inline-block; margin: 0px !important;}
+								.formconfedence input[type=checkbox] {width: 20px; height: 20px;}
+								.formconfedence > div:nth-child(1) {width: 30px;} 
+								.formconfedence > div:nth-child(2) {line-height: 15px; margin-left: 10px; color: #d8d8d8 !important;
+															      text-align: left; width: 700px; font-size: 14px; line-height: 18px; 
+																  font-family: 'exo_2.0regular';}
+									.formconfedence > div:nth-child(2) a {color: #d8d8d8;}
+									.formconfedence > div:nth-child(2) a:hover {text-decoration: none;}
+				.benefitsinside {text-align: right; margin-right: 20px; margin-top: 50px;}
+					.benefitsinside p {color: #ffffff; font-size: 30px; line-height: 34px; margin-bottom: 10px; color: #00a0e3; font-weight: bold;}
+					.benefitsinside p:last-child {margin-top: 0px;}
+						.benefitsinside p span {display: inline-block; margin-right: 10px; vertical-align: top;}
+	
+		/* Zagolovki blokov */
+.blockzag {text-align: center; font-family: 'robotoslab-regular'; font-size: 15px; line-height: 32px;}
+	.blockzag h1, .blockzag h2 {display: inline-block; line-height: 36px;}
+       .blockzag h2 a {display: inline-block; margin-left: 20px; font-size: 18px; color: #c71729;}
+       .blockzag h2 a:hover {color: #; text-decoration: none;}
+	       .blockzag p {font-size: 18px;}	
+.blockzagwhite {text-align: center; font-family: 'robotoslab-regular'; font-size: 15px; line-height: 32px;}
+	.blockzagwhite h1, .blockzagwhite h2 {display: inline-block; line-height: 36px; color: #ffffff !important;}
+	.blockzagwhite p {font-size: 18px;}		
+.blockzagred {text-align: center; font-family: 'robotoslab-regular'; font-size: 15px; line-height: 32px;}
+	.blockzagred h1, .blockzagred h2 {display: inline-block; line-height: 36px; color: #c71729 !important;}
+	.blockzagred p {font-size: 18px;}
+			
+	/* Uslugi */
+#servs {width: 100%; padding: 50px 0px; background: #ffffff url("lightpattern.png"); background-repeat: repeat; background-position: top center;}
+	.servsbody {width: 1170px; margin: 0px auto;}
+		.allservs {text-align: center;}
+			.allservs > div {display: inline-block; vertical-align: top; width: 325px; margin: 50px 31px 0px 31px; height: 141px; overflow: hidden;}
+				.servimgs {width: 135px; text-align: center; overflow: hidden; position: absolute; border: 3px solid #00a0e3; 
+						 border-radius: 70px; -moz-border-radius: 70px; -webkit-border-radius: 70px; height: 135px; }
+					.servimgs img {height: 135px;}
+				.servinfo {text-align: right;}
+					.servzag {font-family: 'robotoslab-regular'; font-size: 21px; line-height: 24px; padding-left: 100px; height: 53px;
+							 overflow: hidden; margin-bottom: 6px; color: #00a0e3;}
+						.servzag > div {display: inline-block; vertical-align: middle;}
+						.servzag > div:nth-child(1) {width: 1px; height: 53px;}
+						.servzag > div:nth-child(2) {width: 190px;}
+							.servzag a {color: #004899;}
+							.servzag a:hover {color: #; text-decoration: none;}
+					.servprice {background-color: #00a0e3; padding: 7px; color: #ffffff; font-size: 20px; line-height: 20px;
+								margin-left: 15px;}
+		.seemoreservs {margin-top: 50px; text-align: center;}
+			.seemoreservs a {display: inline-block; color: #ffffff; text-decoration: none; padding: 10px 12px 10px 59px; font-size: 26px; 
+						   line-height: 26px; background: #00a0e3 url("bino.png"); background-repeat: no-repeat; cursor: pointer;
+						   background-position: top left; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;}
+			.seemoreservs a:hover {background: #009640 url("bino.png"); background-repeat: no-repeat; background-position: top left;}
+		#fulltextbody {display: none;}
+			#fulltextbody p {margin-top: 20px;}
+			
+	/* U nas provodyat */
+#actions {width: 100%; background: url("actions.jpg"); background-repeat: no-repeat; background-position: top center;
+	   background-size: cover;}
+	.actionsfilter {background: url("offerfilter.png"); background-repeat: repeat; background-position: top left; padding: 45px 0px;}
+		.actionsbody {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center;}
+			.allactions {text-align: center;}
+				.allactions > div {display: inline-block; width: 265px; text-align: center; vertical-align: middle; overflow: hidden;
+								 background-color: #ffffff; margin: 45px 20px 0px 0px; padding: 25px 0px; border-radius: 180px; 
+								 -moz-border-radius: 180px; -webkit-border-radius: 180px;}
+				.allactions > div:nth-child(4n+4) {margin-right: 0px;}
+					.allactions > div  img {height: 134px; margin-bottom: 20px;}
+					.allactions > div p {font-size: 24px; color: #00a0e3; padding-bottom: 45px;}
+                        .allactions > div p a {color: #00a0e3;}
+                        .allactions > div p a:hover {color: #c71729; text-decoration: none;}
+			.seemoreactions {margin-top: 50px; text-align: center;}
+				.seemoreactions a {display: inline-block; color: #ffffff; text-decoration: none; padding: 10px 12px 10px 49px; font-size: 26px; 
+							   line-height: 26px; background: #c71729 url("acti.png"); background-repeat: no-repeat; cursor: pointer;
+							   background-position: top left; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;}
+				.seemoreactions a:hover {background: #009640 url("acti.png"); background-repeat: no-repeat; background-position: top left;}
+					
+	/* Preimushestva */
+#benefits {width: 100%; padding-top: 45px; background: #009640 url("greenpattern.png"); background-repeat: repeat; 
+		  background-position: top left;}
+	.benefitsbody {width: 1172px; min-width: 1172px; margin: 0px auto; text-align: center;}
+		.benefitsbody > div {display: inline-block; margin-bottom: 45px; width: 210px; vertical-align: top; 
+						   margin-right: 20px;}
+		.benefitsbody > div:nth-child(5n+5) {margin-right: 0px;}
+			.benefitimg {text-align: center; margin-bottom: 10px;}
+			.benefittext {text-align: left;}
+				.benefittext p {font-size: 21px; line-height: 25px; color: #ffffff;}
+				.benefittext p:nth-child(1) {font-family: 'robotoslab-regular'; margin-bottom: 3px;}
+				.benefittext p:nth-child(2) {line-height: 20px; margin-top: 2px;}
+					.benefittext p strong {font-size: 16px; color: #ffffff;}
+	
+	/* Fototur */
+#gallery {width: 100%; padding: 45px 0px; background: #ffffff url("gallerybg.jpg"); background-repeat: no-repeat; 
+		 background-position: top center; background-size: cover;}
+	.gallerybody {width: 1170px; min-width: 1170px; margin: 0px auto;}
+		.seogallery {text-align: center;}
+			.seogallery a {width: 170px; overflow: hidden; text-align: center; text-decoration: none; display: inline-block;
+						  border: 3px solid #ffffff; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+						  margin: 25px 5px 0px 5px;}
+				.seogallery a img {height: 170px; display: inline-block; vertical-align: top;}
+		.seemorephotos {margin-top: 45px; text-align: center;}
+			.seemorephotos a {display: inline-block; color: #ffffff; text-decoration: none; padding: 10px 12px 10px 49px; font-size: 26px; 
+							 line-height: 26px; background: #c71729 url("acti.png"); background-repeat: no-repeat; cursor: pointer;
+							 background-position: top left; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;}
+			.seemorephotos a:hover {background: #009640 url("acti.png"); background-repeat: no-repeat; background-position: top left;}
+	
+	/* Chastye voprosy i shema */
+#faq {width: 100%; padding: 50px 0px; background: #ffffff url("lightpattern.png"); background-repeat: repeat; background-position: top center;}
+	.faqbody {width: 1170px; margin: 0px auto;}
+		.faqcols {text-align: center; margin-top: 45px;}
+			.faqcols > div {display: inline-block; vertical-align: middle;}
+			.faqcols > div:nth-child(1) {width: 490px; margin-right: 60px;}
+				.allfaqs > div {padding: 15px 20px; border-top: 1px solid #00a0e3; text-align: left;}
+				.allfaqs > div:last-child {border-bottom: 1px solid #00a0e3;}
+					.questlink {color: #004899; font-size: 20px; line-height: 24px; cursor: pointer; text-decoration: underline;}
+					.questlink:hover {text-decoration: none; color: #00a0e3;}
+						.youranswer p {margin-top: 15px;}
+			.faqcols > div:nth-child(2) {width: 580px;}
+				.faqcols > div:nth-child(2) img {max-width: 580px;}
+			
+	/* Bystraya zayavka */
+#fastorder {width: 100%; padding: 45px 0px; background: #21260f url("army.jpg"); background-repeat: no-repeat; background-position: top center;
+			background-size: cover;}
+	.fastorderbody {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center;}
+	
+	/* Klienty i partnery */
+#partners {width: 100%; padding: 45px 0px; background: #ffffff url("paintballbg.png"); background-repeat: repeat; background-position: top center;}
+	.partnersbody {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center;}
+		.allpartners > img {display: inline-block; vertical-align: middle; margin: 25px 35px 0px 35px;}
+	
+	/* SEO blok */
+#seo {width: 100%; padding-top: 45px; background: #009640 url("greenpattern.png"); background-repeat: repeat; 
+	 background-position: top left;}
+	.seobody {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center;}
+		.seobody > div {display: inline-block; vertical-align: middle;}
+		.seobody > div:nth-child(1) {width: 650px; margin-right: 30px; background: url("greencircle.png"); padding-top: 30px;
+								   background-repeat: no-repeat; background-position: top center;}
+		.seobody > div:nth-child(2) {width: 470px;}
+			.blockzagbottom h2 {text-align: left !important; color: #ffffff;}
+			.seobodytext {text-align: left; color: #ffffff; font-size: 16px; line-height: 21px; margin: 35px 0px;}
+				.seobodytext p {margin-top: 15px;}
+			.readseo {display: inline-block; background-color: #c71729; padding: 12px 20px; text-transform: uppercase; font-size: 23px;
+					 line-height: 23px; cursor: pointer;}
+			.readseo:hover {background-color: #ed2338;}
+			#fulltext {display: none; text-align: left;}
+				#fulltext p {margin-top: 15px; color: #ffffff;}
+                
+   	/* Statyi */
+#articles {width: 100%; padding: 45px 0px; background: #ffffff url("lightpattern.png"); background-repeat: repeat; background-position: top center;}
+	.articlesbody {width: 1172px; min-width: 1172px; margin: 0px auto; text-align: center;}
+		.allarticlesbody > div {display: inline-block; vertical-align: top; width: 300px; text-align: left; margin: 45px 30px 0px 30px;}
+			.articleimg {margin-bottom: 5px; width: 300px; overflow: hidden;}
+				.articleimg img {height: 173px;}
+					.articlestart p:nth-child(2) {text-align: center; padding: 10px 0px; color: #df114a; font-size: 16px;}
+					.articlestart p a {font-size: 17px; line-height: 21px; color: #004899;}
+					.articlestart p a:hover {color: #c71729; text-decoration: none;}
+					.articlestart p span {display: inline-block; background-color: #c71729; color: #ffffff; padding: 5px; font-size: 14px;}
+				.articleanons p {color: #7c7876; font-size: 16px; line-height: 20px;}
+                
+   /* Informacionnaya stranica */	
+.statya {width: 100%; margin-top: 30px; text-align: left;}
+	.statyaimg {float: left;}
+		.statyaimg img {width: 300px; margin-right: 15px; margin-bottom: 5px;}
+		.statyatext p {font-size: 16px; line-height: 20px; margin-top: 25px;}
+		.statyatext p:first-child {margin-top: 0px;}
+				
+	/* Footer */
+#footer {width: 100%; background-color: #000000; padding: 15px 0px 7px 0px;}
+	.footertopline {width: 1170px; min-width: 1170px; margin: 0px auto; text-align: center;}	
+		.footertopline > div {display: inline-block; vertical-align: middle;}
+		.footertopline > div:nth-child(2) {margin: 0px 193px;}
+			.footertopline > div:nth-child(2) a {margin-right: 5px;}
+			.footertopline > div:nth-child(2) a:last-child {margin-right: 0px;}
+				.maker {color: #ffffff;}
+					.maker a {color: #00a0e3;}
+					.maker a:hover {color: #0091cd; text-decoration: none;}
+		.footertopline > div:nth-child(3) {text-align: right;}
+			.footertopline > div:nth-child(3) p:nth-child(1) {font-size: 23px; margin-bottom: 4px;}
+				.footertopline > div:nth-child(3) p span {display: inline-block; margin-right: 8px;}
+				.footertopline > div:nth-child(3) p:nth-child(1) a {color: #ffffff; text-decoration: none;}
+				.footertopline > div:nth-child(3) p:nth-child(1) a:hover {color: #00a0e3;}
+                
+            .footertopline > div:nth-child(3) p:nth-child(2) {font-size: 23px;}
+				.footertopline > div:nth-child(3) p span {display: inline-block; margin-right: 8px;}
+				.footertopline > div:nth-child(3) p:nth-child(2) a {color: #ffffff; text-decoration: none;}
+				.footertopline > div:nth-child(3) p:nth-child(2) a:hover {color: #00a0e3;}
+                
+			.footertopline > div:nth-child(3) p:nth-child(3) {font-size: 17px; color: #ffffff; margin-top: 5px;}
+				.footertopline > div:nth-child(3) p:nth-child(3) a {display: inline-block; margin-left: 12px; color: #00a0e3;}
+				.footertopline > div:nth-child(3) p:nth-child(3) a:hover {text-decoration: none;}
+				
+	/* Video */
+#video {width: 100%; background: #009640 url("greenpattern.png"); background-repeat: repeat; background-position: top left;
+	   padding: 45px 0px 20px 0px;}
+	.videozone {text-align: center;}
+			.videozone > div {display: inline-block; margin: 25px 8px 25px 8px;}
+				.videozone > div iframe {width: 350px; height: 197px; overflow: hidden;}
+	
+	/* Text na stranice uslugi */
+#textinside {width: 100%; padding: 50px 0px; background: url("textinsidebg.jpg"); background-repeat: no-repeat; 
+			background-position: top center; background-size: cover;}
+#textinsideprice {width: 100%; padding-bottom: 50px; background: url("lightpattern.png"); background-repeat: repeat; 
+				background-position: top left;}
+	.textinsidebody {width: 1136px; min-width: 1136px; margin: 0px auto;}
+	.textinsidebodyprice {width: 1136px; min-width: 1136px; margin: 0px auto; padding-top: 50px;}
+		.prices > div {display: block; border-top: 1px solid #00a0e3; padding: 15px 10px; background-color: #1c1c1c; color: #ffffff;}
+		.prices > div:last-child {border-bottom: 1px solid #00a0e3;}
+			.prices > div > div {display: inline-block; vertical-align: top;}
+			.prices > div > div:nth-child(1) {width: 141px; margin-right: 30px;}
+				.prices > div > div:nth-child(1) img {width: 135px; border: 3px solid #00a0e3; 
+						 border-radius: 70px; -moz-border-radius: 70px; -webkit-border-radius: 70px;}
+			.prices > div > div:nth-child(2) {width: 900px;}
+				.prices > div > div:nth-child(2) p:nth-child(1) {margin-bottom: 30px;}	
+					.prices > div > div:nth-child(2) p strong {color: #00a0e3; font-size: 18px;}
+		.blockzagprice {text-align: center;}
+			.blockzagprice h1, .blockzagprice h2 {display: inline-block; color: #ffffff; background-color: #137ad5; padding: 7px 10px 9px 10px;}
+						
+	/* Kak igrat */
+#howtoplay {width: 100%; background: url("howtoplay.jpeg"); background-repeat: no-repeat; background-position: top center;
+	   background-size: cover;}
+	.howtoplayfilter {background: url("howtoplayfilter.png"); background-repeat: repeat; background-position: top left; padding: 85px 0px;}
+		.howtoplaybody {width: 960px; min-width: 960px; margin: 0px auto; text-align: center; border: 10px solid #00ade4;
+					   padding: 35px 0px; background: #ffffff url("lightpattern.png"); background-repeat: repeat; background-position: top center;}
+			.howtoplaysteps {text-align: center; color: #004899; font-weight: bold;}
+				.howtoplaysteps > div {display: inline-block; width: 190px; text-align: center; margin: 40px 20px 0px 20px; vertical-align: top;}
+				.howtoplaysteps > div:last-child {margin-right: 0px;}
+					.howtoplaysteps > div  img {height: 100px; margin-bottom: 10px;}
+			.howtoplayorder {margin-top: 45px;}
+				.howtoplayorder  a {color: #ffffff; text-decoration: none;}
+				
+	/* Nashi ploshadki */
+#squares {width: 100%; background: url("squares.jpg"); background-repeat: no-repeat; background-position: top center;
+		 background-size: cover; border-top: 5px solid #00a0e3; border-bottom: 5px solid #00a0e3;}
+	.squaresfilter {background: url("squaresfilter.png"); background-repeat: repeat; background-position: top left; padding: 50px 0px;}
+		.squaresbody {width: 1170px; margin: 0px auto;}
+			.allsquares {text-align: center;}
+				.allsquares > div {display: inline-block; vertical-align: top; width: 265px; margin: 50px 31px 0px 0px; height: 141px; overflow: hidden;}
+				.allsquares > div:nth-child(4n+4) {margin-right: 0px;}
+					.servimg {width: 135px; text-align: center; overflow: hidden; position: absolute; border: 3px solid #00a0e3; 
+							 border-radius: 70px; -moz-border-radius: 70px; -webkit-border-radius: 70px;}
+						.servimg img {height: 135px;}
+					.servinfo {text-align: right;}
+						.squarezag {font-family: 'robotoslab-regular'; font-size: 21px; line-height: 24px; padding-left: 40px; height: 53px;
+								 overflow: hidden; margin-bottom: 6px; color: #00a0e3;}
+							.squarezag > div {display: inline-block; vertical-align: middle;}
+							.squarezag > div:nth-child(1) {width: 1px; height: 53px;}
+							.squarezag > div:nth-child(2) {width: 190px;}
+								.squarezag a {color: #004899;}
+								.squarezag a:hover {color: #00a0e3; text-decoration: none;}
+						.servprice {background-color: #00a0e3; padding: 7px; color: #ffffff; font-size: 20px; line-height: 20px;
+									margin-left: 15px;}
+	
+	/* Gallery */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+
+.fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8020;
+}
+
+.fancybox-skin {
+	position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+
+.fancybox-opened {
+	z-index: 8030;
+}
+
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.fancybox-outer, .fancybox-inner {
+	position: relative;
+}
+
+.fancybox-inner {
+	overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+	-webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+	color: #444;
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 15px;
+	white-space: nowrap;
+}
+
+.fancybox-image, .fancybox-iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.fancybox-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	background-image: url("fancybox_sprite.png");
+}
+
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+
+#fancybox-loading div {
+	width: 44px;
+	height: 44px;
+	background: url("urn:scrapbook:download:error:https://paintball-ufa.ru/views/jurs/img/fancybox_loading.gif") center center no-repeat;
+}
+
+.fancybox-close {
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+}
+
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent url("urn:scrapbook:download:error:https://paintball-ufa.ru/views/jurs/img/blank.gif"); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 8040;
+}
+
+.fancybox-prev {
+	left: 0;
+}
+
+.fancybox-next {
+	right: 0;
+}
+
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	width: 36px;
+	height: 34px;
+	margin-top: -18px;
+	cursor: pointer;
+	z-index: 8040;
+}
+
+.fancybox-prev span {
+	left: 10px;
+	background-position: 0 -36px;
+}
+
+.fancybox-next span {
+	right: 10px;
+	background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+
+.fancybox-tmp {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+	visibility: hidden;
+	max-width: 99999px;
+	max-height: 99999px;
+	overflow: visible !important;
+}
+
+/* Overlay helper */
+
+.fancybox-lock {
+    overflow: hidden !important;
+    width: auto;
+}
+
+.fancybox-lock body {
+    overflow: hidden !important;
+}
+
+.fancybox-lock-test {
+    overflow-y: hidden !important;
+}
+
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: url("fancybox_overlay.png");
+}
+
+.fancybox-overlay-fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+	overflow: auto;
+	overflow-y: scroll;
+}
+
+/* Title helper */
+
+.fancybox-title {
+	visibility: hidden;
+	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+	visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-bottom: -35px;
+	z-index: 8050;
+	text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+	display: inline-block;
+	margin-right: -100%;
+	padding: 2px 20px;
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+	background: rgba(0, 0, 0, 0.8);
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
+	text-shadow: 0 1px 2px #222;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+	position: relative;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+	padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	padding: 10px;
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min--moz-device-pixel-ratio: 1.5),
+	   only screen and (min-device-pixel-ratio: 1.5){
+
+	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+		background-image: url("fancybox_sprite@2x.png");
+		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+
+	#fancybox-loading div {
+		background-image: url("urn:scrapbook:download:error:https://paintball-ufa.ru/views/jurs/img/fancybox_loading@2x.gif");
+		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+}
+
+    /* Fiksirovannaya polosa */
+#back-top.default {display: none !important;}
+#back-top.fixed {position: fixed; width: 100%; top: 0 !important; left: 0; z-index: 99999; text-align: center;}	
+#back-topmobilemenu.default {display: none;}
+	
+	/* Dopstili */
+#menufixed {width: 100%; text-align: center; background: #171717 url("headerpattern.png"); 
+            background-repeat: repeat; background-position: top left;}
+#dopmargin {width: 100%; padding-bottom: 45px;}
+.texttext p {margin-bottom: 15px;}
+    .texttext p strong {color: #137ad5;}
+.vcard, .polushko, .secretgallery {display: none !important;}
+.sitemap, .consultbodymobile, #mobilemenu, #infomenu, #bannersmobile, #fmobile, #footerext {display: none;}
